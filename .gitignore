@@ -1,0 +1,31 @@
+# Mac files
+.DS_Store
+
+# NuGet Packages
+packages/
+
+# Visual Studio
+.vs
+
+# JetBrains Rider
+.idea
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+[Bb]in/
+[Oo]bj/
+
+# Logs files
+*.log
+
