@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\MSTest.TestAdapter.1.4.0\build\net45\MSTest.TestAdapter.props" Condition="Exists('..\packages\MSTest.TestAdapter.1.4.0\build\net45\MSTest.TestAdapter.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{09D9790B-FE59-4AD0-B23F-FA209AD31A12}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TPP.Practicas.Lista</RootNamespace>
+    <AssemblyName>tests.lista</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">15.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MSTest.TestFramework.1.4.0\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MSTest.TestFramework.1.4.0\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="TestsBitcoinMaxValor.cs" />
+    <Compile Include="TestsBitcoinMediaValores.cs" />
+    <Compile Include="TestsBitcoinNumValoresPorEncima.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\master.worker\master.worker.csproj">
+      <Project>{57b5fcba-4521-406a-abed-8bfc2d9210cf}</Project>
+      <Name>master.worker</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Practica10\bitcoin.csproj">
+      <Project>{dd58078b-acd4-41c1-96fd-8d1ad4db18fb}</Project>
+      <Name>bitcoin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\xbteur-2018-6-1.5.txt" />
+    <Content Include="data\xbteur-2018-6-10.5.txt" />
+    <Content Include="data\xbteur-2018-6-11.5.txt" />
+    <Content Include="data\xbteur-2018-6-12.5.txt" />
+    <Content Include="data\xbteur-2018-6-13.5.txt" />
+    <Content Include="data\xbteur-2018-6-14.5.txt" />
+    <Content Include="data\xbteur-2018-6-15.5.txt" />
+    <Content Include="data\xbteur-2018-6-16.5.txt" />
+    <Content Include="data\xbteur-2018-6-17.5.txt" />
+    <Content Include="data\xbteur-2018-6-18.5.txt" />
+    <Content Include="data\xbteur-2018-6-19.5.txt" />
+    <Content Include="data\xbteur-2018-6-2.5.txt" />
+    <Content Include="data\xbteur-2018-6-20.5.txt" />
+    <Content Include="data\xbteur-2018-6-21.5.txt" />
+    <Content Include="data\xbteur-2018-6-22.5.txt" />
+    <Content Include="data\xbteur-2018-6-23.5.txt" />
+    <Content Include="data\xbteur-2018-6-24.5.txt" />
+    <Content Include="data\xbteur-2018-6-25.5.txt" />
+    <Content Include="data\xbteur-2018-6-26.5.txt" />
+    <Content Include="data\xbteur-2018-6-27.5.txt" />
+    <Content Include="data\xbteur-2018-6-28.5.txt" />
+    <Content Include="data\xbteur-2018-6-29.5.txt" />
+    <Content Include="data\xbteur-2018-6-3.5.txt" />
+    <Content Include="data\xbteur-2018-6-30.5.txt" />
+    <Content Include="data\xbteur-2018-6-4.5.txt" />
+    <Content Include="data\xbteur-2018-6-5.5.txt" />
+    <Content Include="data\xbteur-2018-6-6.5.txt" />
+    <Content Include="data\xbteur-2018-6-7.5.txt" />
+    <Content Include="data\xbteur-2018-6-8.5.txt" />
+    <Content Include="data\xbteur-2018-6-9.5.txt" />
+    <Content Include="data\xbteur-2018-7-1.5.txt" />
+    <Content Include="data\xbteur-2018-7-10.5.txt" />
+    <Content Include="data\xbteur-2018-7-11.5.txt" />
+    <Content Include="data\xbteur-2018-7-12.5.txt" />
+    <Content Include="data\xbteur-2018-7-13.5.txt" />
+    <Content Include="data\xbteur-2018-7-14.5.txt" />
+    <Content Include="data\xbteur-2018-7-15.5.txt" />
+    <Content Include="data\xbteur-2018-7-16.5.txt" />
+    <Content Include="data\xbteur-2018-7-17.5.txt" />
+    <Content Include="data\xbteur-2018-7-18.5.txt" />
+    <Content Include="data\xbteur-2018-7-19.5.txt" />
+    <Content Include="data\xbteur-2018-7-2.5.txt" />
+    <Content Include="data\xbteur-2018-7-20.5.txt" />
+    <Content Include="data\xbteur-2018-7-21.5.txt" />
+    <Content Include="data\xbteur-2018-7-22.5.txt" />
+    <Content Include="data\xbteur-2018-7-23.5.txt" />
+    <Content Include="data\xbteur-2018-7-24.5.txt" />
+    <Content Include="data\xbteur-2018-7-25.5.txt" />
+    <Content Include="data\xbteur-2018-7-26.5.txt" />
+    <Content Include="data\xbteur-2018-7-27.5.txt" />
+    <Content Include="data\xbteur-2018-7-28.5.txt" />
+    <Content Include="data\xbteur-2018-7-29.5.txt" />
+    <Content Include="data\xbteur-2018-7-3.5.txt" />
+    <Content Include="data\xbteur-2018-7-30.5.txt" />
+    <Content Include="data\xbteur-2018-7-31.5.txt" />
+    <Content Include="data\xbteur-2018-7-4.5.txt" />
+    <Content Include="data\xbteur-2018-7-5.5.txt" />
+    <Content Include="data\xbteur-2018-7-6.5.txt" />
+    <Content Include="data\xbteur-2018-7-7.5.txt" />
+    <Content Include="data\xbteur-2018-7-8.5.txt" />
+    <Content Include="data\xbteur-2018-7-9.5.txt" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MSTest.TestAdapter.1.4.0\build\net45\MSTest.TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSTest.TestAdapter.1.4.0\build\net45\MSTest.TestAdapter.props'))" />
+    <Error Condition="!Exists('..\packages\MSTest.TestAdapter.1.4.0\build\net45\MSTest.TestAdapter.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSTest.TestAdapter.1.4.0\build\net45\MSTest.TestAdapter.targets'))" />
+  </Target>
+  <Import Project="..\packages\MSTest.TestAdapter.1.4.0\build\net45\MSTest.TestAdapter.targets" Condition="Exists('..\packages\MSTest.TestAdapter.1.4.0\build\net45\MSTest.TestAdapter.targets')" />
+</Project>
